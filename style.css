@@ -1,0 +1,19 @@
+/* Basic styles for the portfolio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
