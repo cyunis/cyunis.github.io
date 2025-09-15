@@ -1,6 +1,6 @@
 title: Portfolio for Catherine Yunis
 description: A showcase of my engineering and artistic work
-#baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cyunis.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -24,6 +24,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+
+# Social media handles
+social:
+  github: cyunis
+  linkedin: catherine-yunis-phd
+  email: yunis@alum.mit.edu
 
 # Exclude from processing
 exclude:
