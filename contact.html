@@ -1,0 +1,85 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
+<section class="contact-section">
+  <div class="container">
+    <h1 class="page-title">Contact Me</h1>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p>I'm always interested in discussing new robotics projects, collaboration opportunities, or answering questions about my work. Feel free to reach out through any of the following methods:</p>
+        
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3>Email</h3>
+            <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <h3>LinkedIn</h3>
+            <p><a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <p>Use the form below to send me a message directly. I'll get back to you as soon as possible.</p>
+        
+        <form id="contact-form" action="https://formspree.io/f/your-formspree-endpoint" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Basic form validation
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    if (!name || !email || !subject || !message) {
+      alert('Please fill out all fields');
+      return;
+    }
+    
+    // For GitHub Pages, you'll need to use a form service like Formspree
+    // This is just a placeholder - the form will be submitted to Formspree
+    this.submit();
+  });
+</script>

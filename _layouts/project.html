@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="project-container">
+  <div class="project-header">
+    <h1 class="project-title">{{ page.title }}</h1>
+    <div class="project-meta">
+      <span class="project-date">{{ page.date | date: "%B %Y" }}</span>
+      {% if page.categories %}
+      <span class="project-categories">
+        {% for category in page.categories %}
+        <span class="category">{{ category }}</span>
+        {% endfor %}
+      </span>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if page.image %}
+  <div class="project-featured-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  {% if page.gallery %}
+  <div class="project-gallery">
+    <h2>Project Gallery</h2>
+    <div class="gallery-grid">
+      {% for image in page.gallery %}
+      <div class="gallery-item">
+        <img src="{{ image.url | relative_url }}" alt="{{ image.alt }}">
+        {% if image.caption %}
+        <p class="caption">{{ image.caption }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.video %}
+  <div class="project-video">
+    <h2>Project Demo</h2>
+    <div class="video-container">
+      <iframe src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="project-navigation">
+    <div class="nav-previous">
+      {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}">&larr; Previous Project</a>
+      {% endif %}
+    </div>
+    <div class="nav-next">
+      {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}">Next Project &rarr;</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

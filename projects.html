@@ -1,0 +1,39 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<section class="projects-section">
+  <div class="container">
+    <h1 class="page-title">My Robotics Projects</h1>
+    
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="autonomous">Autonomous</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+      <button class="filter-btn" data-filter="humanoid">Humanoid</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+    </div>
+    
+    <div class="projects-grid" id="projects-grid">
+      {% for project in site.projects %}
+        <div class="project-card" data-categories="{{ project.categories | join: ' ' }}">
+          <div class="project-image">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-excerpt">{{ project.excerpt }}</p>
+            <div class="project-categories">
+              {% for category in project.categories %}
+                <span class="category-tag">{{ category }}</span>
+              {% endfor %}
+            </div>
+            <a href="{{ project.url | relative_url }}" class="btn btn-secondary">View Details</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

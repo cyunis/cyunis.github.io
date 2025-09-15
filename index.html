@@ -1,0 +1,48 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Robotics Engineering Portfolio</h1>
+      <p>A showcase of my robotics projects, skills, and experiences</p>
+      <a href="{{ '/projects' | relative_url }}" class="btn btn-primary">View Projects</a>
+    </div>
+  </div>
+</section>
+
+<section class="featured-projects">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      {% assign featured_projects = site.projects | where: "featured", true | limit: 3 %}
+      {% for project in featured_projects %}
+        <div class="project-card">
+          <div class="project-image">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-excerpt">{{ project.excerpt }}</p>
+            <a href="{{ project.url | relative_url }}" class="btn btn-secondary">View Project</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="view-all">
+      <a href="{{ '/projects' | relative_url }}" class="btn btn-outline">View All Projects</a>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <h2 class="section-title">About Me</h2>
+      <p>I am a passionate robotics engineer with expertise in designing, building, and programming robots. My work spans across various domains including industrial automation, autonomous systems, and human-robot interaction.</p>
+      <a href="{{ '/about' | relative_url }}" class="btn btn-outline">Learn More</a>
+    </div>
+  </div>
+</section>
