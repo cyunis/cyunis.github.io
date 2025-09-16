@@ -2,9 +2,9 @@
 layout: project
 title: Tommy Thumb
 date: 2019-12-22
-categories: [humanoid, autonomous]
+categories: [assistive, wearable]
 featured: true
-image: /assets/images/projects/humanoid-robot.jpg
+image: /assets/images/Setup.png
 excerpt: An experiment designed for children with cerebral palsy to play a guessing game with a robot while wearing an orthosis.
 gallery:
   - url: /assets/images/Setup.png
