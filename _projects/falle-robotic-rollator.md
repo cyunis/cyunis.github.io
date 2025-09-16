@@ -13,14 +13,14 @@ gallery:
   - url: /assets/images/stateMachineSimple.png
     alt: Block diagram of states for FALL-E control
     caption: State machine showing states of FALL-E during an experiment
-  - url: /assets/images/components_basket.png
+  - url: /assets/images/components_basket.jpg
     alt: Electronics in the basket and on the inside of the basket lid of FALL-E 
     caption: Internal hardware used to control FALL-E
 ---
 
 ## Project Overview
 
-Walker use is associated with falls, which is a scary possibility for users. To learn more about causes of falls, this autonomous experimental robot was designed to disrupt user's balance while they are walking to mimic scenarios that could potentially cause falls. The walker provides motorized accelerations and collects data in tandem with a motion capture system.
+Walker use is associated with falls, which is a scary possibility for users. To learn more about causes of falls, this autonomous experimental robot was designed to disrupt user's balance while they are walking to study how people respond. The walker provides motorized accelerations and collects data in tandem with a motion capture system. For additional detail see here: https://rasc.usc.edu/blog/fall-e/.
 
 ## Technical Specifications
 
