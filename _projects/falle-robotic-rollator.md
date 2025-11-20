@@ -2,7 +2,7 @@
 layout: project
 title: FALL-E the Robotic Rollator
 date: 2025-05-09
-categories: [mobility, hardware, assistive]
+categories: [hardware, assistive]
 featured: true
 image: /assets/images/FALLEv2_labeled.png
 excerpt: An autonomous robot designed for experiments testing rollator users balance in response to perturbation.

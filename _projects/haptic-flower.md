@@ -1,68 +1,50 @@
 ---
 layout: project
-title: Industrial Robotic Arm
-date: 2024-11-10
-categories: [industrial, iot]
+title: Crip Haptic Flower Techno Jam
+date: 2025-05-10
+categories: [arts, haptics]
 featured: true
-image: /assets/images/projects/robotic-arm.jpg
-excerpt: A 6-axis robotic arm designed for precision manufacturing tasks with advanced computer vision integration.
+image: /assets/images/flower_blanket.jpg
+excerpt: A haptic flower designed for disabled dancers to use during live performance.
 gallery:
-  - url: /assets/images/projects/robotic-arm-1.jpg
-    alt: Robotic arm in operation
-    caption: The robotic arm performing a precision assembly task
-  - url: /assets/images/projects/robotic-arm-2.jpg
-    alt: Control system
-    caption: Custom control system with real-time feedback
-  - url: /assets/images/projects/robotic-arm-3.jpg
-    alt: Vision system
-    caption: Computer vision system for part recognition
-video: https://www.youtube.com/embed/example-video-id
+  - url: /assets/images/flower_blanket.jpg
+    alt: Crip Haptic Flower Techno Jam system shot
+    caption: The flower and blanket used to create the vibration feedback during live performance. The flower is a black shape with rainbow electronic patterns on the fabric and the blanket is a checkerboard of fuzzy and soft pastel colors like green, pink and orange
+  - url: /assets/images/flower_participant.png
+    alt: A participant in a wheelchair is looking at the haptic flower on their chest as they are receiving haptic feedback
+    caption: A participant has the haptic flower on their chest as they are receiving haptic feedback
 ---
 
 ## Project Overview
 
-This 6-axis robotic arm was designed for high-precision manufacturing tasks in small-scale production environments. The system integrates advanced computer vision capabilities to identify, sort, and manipulate various components with sub-millimeter accuracy.
+This project consisted of a blanket and flower with ERM's that provided haptic vibration feedback and was designed for use by disabled dancers with the feedback controlled via a GUI by a choreographer. The system is designed to be used during live performances and can also play preprogrammed signals. This work was funded by the Touch Aesthetics Fellowship at ASU NEM as part of the Leonardo CripTech Incubator.
 
 ## Technical Specifications
 
-- **Reach**: 850mm
-- **Payload Capacity**: 5kg
-- **Repeatability**: ±0.02mm
-- **Degrees of Freedom**: 6-axis
-- **Maximum Speed**: 180°/s (joint speed)
-- **Control System**: Custom real-time controller with EtherCAT communication
-- **Vision System**: 
-  - 2x 4K industrial cameras
-  - Structured light 3D scanner
-  - Custom ML-based object recognition
-- **End Effectors**: 
-  - Pneumatic gripper
-  - Vacuum suction cup array
-  - Precision screwdriver
+- **Radius of flower**: 850mm
+- **Number of ERM (eccentric rotating motor)**: 16
+- **Control System**: Arduino Uno with PCA9685 motor controller
+- **GUI System**: Unity custom application 
 
 ## Development Process
 
-The development of this robotic arm involved:
+The development of this haptic flower was done in a team of four, by members Vanessa Cruz, Selwa Sweiden, and Premankur Banerjee. The components of this project I worked on included:
 
-1. **Mechanical Engineering**: Design and simulation of the arm structure, joint mechanisms, and end effectors.
-2. **Electronics Design**: Development of custom motor drivers, sensor integration, and safety systems.
-3. **Control System**: Implementation of inverse kinematics, trajectory planning, and real-time control algorithms.
-4. **Computer Vision**: Development of object recognition, pose estimation, and quality control systems.
-5. **Integration**: Combining all subsystems and calibrating for precision operation.
+1. **Mechanical Design**: Visual design of system and haptic sketching with various materials to match criteria of weight, flexibility and size
+2. **Electronics Design**: Designing circuit layout, soldering electronics together and debugging
+3. **Integration**: Combining all subsystems and designing test cases
 
 ## Challenges and Solutions
 
-A significant challenge was achieving the required precision while maintaining a reasonable cost. This was addressed by using high-quality servo motors with custom gearboxes and developing a sophisticated calibration procedure that compensates for mechanical imperfections.
+A significant challenge was the timeline for this project. From start to finish, this project was conceived and built in a period of two weeks. This required intense communication and collaboration across all team members. 
 
-Another challenge was developing a reliable vision system that could work under varying lighting conditions. I implemented a multi-spectral approach with controlled lighting and developed adaptive algorithms that can adjust to environmental changes.
+In addition, the hardware was going to be used in a live performance so it had to work. We tested individual components and assembly techniques with a single petal, before committing to building the whole flower. 
 
 ## Results
 
-The robotic arm achieved a 98% success rate in assembly tasks, with cycle times reduced by 35% compared to previous methods. The system's flexibility allows it to be quickly reprogrammed for different tasks, making it ideal for small-batch production environments.
+The crip haptic flower techno jam worked on its first debut in a live performance and was able to be used for two user studies after that. A paper will be submitted to Transactions on Haptics for a special Arts track. 
 
 ## Future Improvements
 
-- Implementation of force feedback for delicate assembly operations
-- Integration with collaborative features for human-robot cooperation
-- Cloud connectivity for remote monitoring and programming
-- Expanded library of end effectors for specialized tasks
+- Improving the durability of the wiring 
+- Creating additional flowers to have more than one available for use during performance
