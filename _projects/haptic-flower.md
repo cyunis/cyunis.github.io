@@ -21,7 +21,7 @@ This project consisted of a blanket and flower with ERM's that provided haptic v
 
 ## Technical Specifications
 
-- **Radius of flower**: 850mm
+- **Radius of flower**: 60cm
 - **Number of ERM (eccentric rotating motor)**: 16
 - **Control System**: Arduino Uno with PCA9685 motor controller
 - **GUI System**: Unity custom application 
