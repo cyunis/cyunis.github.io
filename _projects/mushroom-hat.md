@@ -34,7 +34,7 @@ Here is a demo of the prototype showing the main feature, the increasing movemen
 The development of this mushroom hat was done in a team of two, with myself and Dr. Nathan Dennler. The components of this project I worked on included:
 
 1. **Mechanical Design**: Visual design of system and haptic sketching with various materials to match criteria of weight, flexibility and size
-2. **Material Selection**: Choice of fabric materials and structural elementss
+2. **Material Selection**: Choice of fabric materials and structural elements
 
 ## Challenges and Solutions
 
